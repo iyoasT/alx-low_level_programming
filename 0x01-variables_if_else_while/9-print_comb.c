@@ -9,7 +9,7 @@ int main(void)
 
 	do {
 		putchar(num);
-		if (num!= 57)
+		if (num != 57)
 		{
 			putchar(',');
 			putchar(' ');
@@ -19,5 +19,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
-			
