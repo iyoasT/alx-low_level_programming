@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
- * main - Print the alphabet - 'e' and 'q'
+ * main - void
  * Return: 0
  */
 int main(void)
 {
-	int num = 0;
+	int num = 48;
 
-	while (num < 10)
+	while (num <= 57)
 	{
-		printf("%d", num);
+		putchar(num);
 		num++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
