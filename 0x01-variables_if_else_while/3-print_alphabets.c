@@ -13,7 +13,7 @@ int main(void)
 		putchar(abc);
 		abc++;
 	}
-	whilw (ABC <= 'Z')
+	while (ABC <= 'Z')
 	{
 		putchar(ABC);
 		ABC++;
