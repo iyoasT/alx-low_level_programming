@@ -2,9 +2,9 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *main - print if de last digit of n is greater than 5, less than 6 or is zero 
- *Return: 0   
- */
+*main - print if de last digit of n is greater than 5, less than 6 or is zero 
+*Return: 0   
+*/
 int main(void)
 {
 	int n;
