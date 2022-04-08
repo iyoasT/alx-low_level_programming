@@ -1,20 +1,17 @@
 #include <stdio.h>
 /**
- *
- *main - Print the alphabet
- *
- *Return: 0
- *
+ * main - Print the alphabet
+ * Return: 0
  */
 int main(void)
 {
 	char abc = 'a';
 
-	while (abc <= 'z') 
+	while (abc <= 'z')
 	{
 		putchar(abc);
-	  	abc++;
-	}	
+		abc++;
+	}
 	putchar('\n');
-        return (0);
+	return (0);
 }
