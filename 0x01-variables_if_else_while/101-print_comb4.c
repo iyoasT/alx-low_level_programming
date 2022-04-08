@@ -1,4 +1,4 @@
-nclude<stdio.h>
+#include <stdio.h>
 /**
  * main - print comb4.
  * Return: 0 (success)
