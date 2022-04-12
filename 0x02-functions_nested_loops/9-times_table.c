@@ -1,37 +1,36 @@
-#include "main.h"
+#include "holberton.h"
 /**
- * times_table - function that print the 9 time table
- * Return: void
+ * times_table - prints the times table from 0 - 9.
+(*
+ * Return: Nothing.
  */
 void times_table(void)
 {
-	int cel, row, val, val_last, val_first;
+	int i, j, res;
 
-	for (row = 0; row < 10; row++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (cel = 0; cel < 10; cel++)
+		for (j = 0; j <= 9; j++)
 		{
-			for (cel = 0; cel < 10; cel++)
+			res = (i * j);
+			if (j != 0)
 			{
-				val = cel* row;
-				if (val > 9)
-				{
-					if ( val > 9)
-					{
-						if ( cel != 0)
-						{
-							if (cel != 0)
-							{
-								_putchar(',');
-								_putchar(' ');
-								_putchar(' ');
-							}
-							_putchar(val + '0');
-						}
-					}
-					_putchar('\n');
-				}
+				_putchar(',');
+				_putchar(' ');
 			}
+			if (res >= 10)
+			{
+				_putchar((res / 10) + '0');
+				_putchar((res % 10) + '0');
+			}
+			else if (res < 10 && j != 0)
+			{
+				_putchar(' ');
+				_putchar((res % 10) + '0');
+			}
+			else
+				_putchar((res % 10) + '0');
 		}
+		_putchar('\n');
 	}
 }
