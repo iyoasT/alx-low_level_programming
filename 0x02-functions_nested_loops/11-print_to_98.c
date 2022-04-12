@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
- * print_to_98 - Prints all natural numbers from input to 98, in order separated by a comma followed by a space.
- * @n:int 1
+ * print_to_98 - function that prints all natural numbers from n to 98,
+ * followed by a new line.
+ * @n: int 1
  * Return: int
  */
 void print_to_98(int n)
@@ -21,15 +22,14 @@ void print_to_98(int n)
 	{
 		while (n >= 98)
 		{
-			printf("%d" , n);
+			printf("%d", n);
 			if (n != 98)
 			{
 				printf(", ");
 			}
 			n--;
 		}
-	}
-	else
+	} else
 	{
 		printf("%d", n);
 	}
