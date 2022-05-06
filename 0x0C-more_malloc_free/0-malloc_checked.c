@@ -1,20 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
-
 /**
- * malloc_cheked - Allocates memory
- * @b: size used to initialize unsigned int
- *
- * Return: always success.
-**/
-
+ * malloc_checked - creates an array of integers.
+ * @b: input.
+ * Return: Output.
+ */
 void *malloc_checked(unsigned int b)
 {
-void *array = malloc(b);
+	void *g = malloc(b);
 
-if (array == NULL)
-{
-exit(98);
-}
-return (array);
+	if (g == NULL)
+	{
+		exit(98);
+	}
+	return (g);
 }
